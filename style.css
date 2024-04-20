@@ -216,7 +216,7 @@ h1 > span:nth-of-type(2) {
   align-items: center;
   text-align: center;
 }
- 
+
 /* hero */
 h2.glow-text {
   font-family: "Teko", system-ui;
@@ -314,7 +314,7 @@ h2.glow-text {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 15px);
-  gap: 15px;
+  gap: 10vw;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -351,34 +351,37 @@ h2.glow-text {
 
 .carousel .card {
   scroll-snap-align: start;
-  height: 500px;
-  width: 18rem;
+  height: 90vh;
+  width: 40vw;
+  min-width: ;
   list-style: none;
   background: white;
-  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.card .card-img img {
-  height: 100%;
-  width: 17rem;
-  object-fit: cover;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
+.card-title {
+  padding: 1rem;
 }
+
+.card-img {
+  position: sticky;
+}
+
 
 .card-text {
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 10px);
   }
+
   .wrapper i {
     margin-right 15px;
   }
@@ -388,6 +391,7 @@ h2.glow-text {
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
+
   .wrapper i {
     margin-right: 8px;
   }
@@ -456,4 +460,9 @@ label {
 
 .btn {
   background-color: #2d9da9 !important;
+  border: none;
+}
+
+.reach-out {
+  text-align: center;
 }
