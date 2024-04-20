@@ -220,8 +220,7 @@ h2.glow-text {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 10vw;
-  min-width: 75px;
+  font-size: 7vw;
   text-transform: uppercase;
   animation: glow 1s ease-in-out infinite alternate;
   color: #2d9da9
