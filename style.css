@@ -216,12 +216,13 @@ h1 > span:nth-of-type(2) {
   align-items: center;
   text-align: center;
 }
-
+ 
+/* hero */
 h2.glow-text {
   font-family: "Teko", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 7vw;
+  font-size: 11vw;
   text-transform: uppercase;
   animation: glow 1s ease-in-out infinite alternate;
   color: #2d9da9
@@ -242,11 +243,6 @@ h2 {
   }
 }
 
-.purpose-p {
-  font-size: 1.5rem;
-  color: whitesmoke;
-  text-align: center;
-}
 
 /* portfolio */
 
