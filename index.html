@@ -86,8 +86,9 @@
 
       </section>
 
-
-      <h2 class="like-heading my-4">Things I Enjoy</h2>
+      <div class="container-fluid my-4">
+      <h2 class="like-heading">Things I Enjoy</h2>
+      </div>
       <section class="things-i-like mb-4">
         <div class="wrapper container-fluid m-0">
           <i class="fa-solid fa-angle-left"></i>
@@ -133,10 +134,44 @@
           </iframe>
         </div>
       </section>
-      </div>
-    </main>
 
 
+
+<section class="form-section my-4">
+    <!-- Wrapper container -->
+<div class="container py-4">
+
+  <!-- Bootstrap 5 starter form -->
+  <form id="contactForm" class="bg-dark">
+
+    <!-- Name input -->
+    <div class="mb-3">
+      <label class="form-label" for="name">Name</label>
+      <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+    </div>
+
+    <!-- Email address input -->
+    <div class="mb-3">
+      <label class="form-label" for="emailAddress">Email Address</label>
+      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+    </div>
+
+    <!-- Message input -->
+    <div class="mb-3">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+    </div>
+
+    <!-- Form submit button -->
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+    </div>
+
+  </form>
+
+</div>
+</section>
+</main>
 
     <a id="footer">
       <footer class="end-page">
