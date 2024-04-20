@@ -217,7 +217,9 @@ h1 > span:nth-of-type(2) {
 }
 
 h2.glow-text {
-  font-family: 'Teko', sans-serif;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
   font-size: 10vw;
   min-width: 75px;
   text-transform: uppercase;
@@ -236,7 +238,7 @@ h2 {
   }
 
   to {
-    text-shadow: 0 0 40px #00373d00, 0 0 10px #ffffff;
+    text-shadow: 0 0 40px #6bfffd, 0 0 10px #ffffff;
   }
 }
 
