@@ -228,11 +228,6 @@ h2.glow-text {
   color: #2d9da9
 }
 
-h2 {
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
-
 @keyframes glow {
   from {
     text-shadow: 0 0 30px #85f0fc;
