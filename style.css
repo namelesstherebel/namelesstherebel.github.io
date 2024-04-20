@@ -446,3 +446,14 @@ img {
 .container {
   margin: 0 !important;
 }
+
+
+/* form */
+
+label {
+  color: white !important;
+}
+
+.btn {
+  background-color: #2d9da9 !important;
+}
