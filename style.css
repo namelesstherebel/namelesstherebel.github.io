@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0
-}
 
 /*start pop header */
 body {
@@ -45,8 +40,7 @@ a:active {
   color: white;
 }
 
-
-.nav-bar {
+.navbar-tgo .nav-bar {
   display: flex;
   background: hsl(0 0% 10%);
   width: 100%;
@@ -212,43 +206,37 @@ h1 > span:nth-of-type(2) {
 /* end pop header */
 
 /* purpose section */
-section.purpose {
-  background-color: hsl(0 0% 10%);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Looking\ away\ BW.jpg') 0 0 repeat;
+.hero {
+  background-image: url(/LookingawayBW.jpg);
   background-position: top center;
-  width: 100%;
-  height: auto;
-  min-height: 300px;
-  color: #4db1bc;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  background-size: cover;
+  height: 80vh;
+  max-height: 400px;
   align-items: center;
-  justify-items: center;
+  text-align: center;
 }
 
 h2.glow-text {
-  margin: 0;
-  padding-bottom: 3rem;
-  padding-top: 6rem;
-  grid-column: 1;
-  grid-row: 1;
-  z-index: 1;
   font-family: 'Teko', sans-serif;
-  font-size: 10rem;
+  font-size: 10vw;
+  min-width: 75px;
   text-transform: uppercase;
-  animation: glow 2s ease-in-out infinite alternate;
-  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  color: #2d9da9
+}
+
+h2 {
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 20px #2d9da9;
+    text-shadow: 0 0 30px #85f0fc;
   }
 
   to {
-    text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    text-shadow: 0 0 40px #00373d00, 0 0 10px #ffffff;
   }
 }
 
@@ -313,6 +301,7 @@ h2.glow-text {
   top: 50%;
   transform: translateY(-50%);
   box-shadow: 0 3px 6px black;
+  margin: auto;
 }
 
 .fa-solid {
@@ -423,8 +412,8 @@ footer {
 }
 
 .my-logo {
-  height: 10vh;
-  width: 100%
+  height: 100px;
+  width: 100px;
 }
 
 .icons-container {
@@ -443,4 +432,17 @@ footer {
 
 .icons i {
   margin-right: 1rem;
+}
+
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.container {
+  margin: 0 !important;
 }

@@ -13,13 +13,13 @@
     <script src="script.js" defer></script>
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100 m-0">
 
     <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html"><img src="/img/blazeluminatiwhite.png" alt="My Logo" class="my-logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="/index.html"><img src="/img/blazeluminatiwhite.png" alt="My Logo" class="my-logo img-fluid"></a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -32,101 +32,106 @@
       </div>
     </nav>
 
-    <section class="special-header">
-      <h1>
-        <span>We talkin bout</span>
-        <span>
-    &nbsp;practice
+
+    <div class="container-fluid">
+      <section class="special-header m-0">
+        <h1>
+          <span>Stefan Doughty's</span>
+          <span>
+    &nbsp;portfolio
     <span class="pops">
       <span class="pop"></span>
-        <span class="pop"></span>
-        <span class="pop"></span>
-        <span class="pop"></span>
-        <span class="pop"></span>
-        </span>
-        </span>
-        <span>™</span>
-      </h1>
-    </section>
+          <span class="pop"></span>
+          <span class="pop"></span>
+          <span class="pop"></span>
+          <span class="pop"></span>
+          </span>
+          </span>
+          <span>™</span>
+        </h1>
+      </section>
+    </div>
+
+
+
     <main>
 
-      <div class="container-fluid">
+      <div class="text-white p-5 mb-4 d-flex hero">
+        <div class="container-fluid">
+          <h2 class="glow-text col-12">
+            HELLO, WORLD!
+          </h2>
+        </div>
+      </div>
 
 
-        <section class="purpose">
-          <div class="purpose-contaier container-fluid">
-            <h2 class="glow-text">HELLO!</h2>
-            <p class="purpose-p">
-              Welcome to Stefan Doughty's Web Dev portfolio page.
-            </p>
-          </div>
-        </section>
 
-        <section class="portfolio mt-5 mb-4">
-          <h2 class="portfolio-heading text-white p-4">Portfolio</h2>
-          <div class="container d-flex justify-content-center">
-            <div class="d-flex flex-row mb-3 justify-content-center list-group">
-              <ul class="left-list text-decoration-none list-unstyled p-3 mx-3 mb-2">
-                <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://github.com/namelesstherebel/stefandoughtyresume/blob/main/Stefan%20Doughty%20WebDev%20Resume%20APRIL2024.pdf" target=”_blank”>Resumè</a></li>
-                <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://codepen.io/namelesstherebel/pen/bGJjVpK" target=”_blank”>iOS Style Calculator *Javascript Practice*</a></li>
-                <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://codepen.io/namelesstherebel/pen/gOydqja" target=”_blank”>Wordle *FrontEndMastersCourse*</a></li>
-              </ul>
-              <ul class="right-list text-decoration-none list-unstyled p-3 mx-3 mb-2">
-                <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://namelesstherebel.github.io/hw-lanscaping/index.html" target=”_blank”>Landscaping Site *Bootstrap 5*</a></li>
-                <li class="list-group-item bg-transparent border-0 mb3"><a href="https://codepen.io/namelesstherebel/pen/jORpeox" target=”_blank”>CrossColorTextReveal *js Scroll* </a></li>
-              </ul>
-            </div>
-          </div>
+      <section class="portfolio my-5 m-0">
+        <div class="container-fluid">
+          <h2 class="justify-content-center text-white">Portfolio</h2>
+        </div>
+
+        <div class="d-flex justify-content-center list-group m-0">
+          <ul class="left-list text-decoration-none list-unstyled p-3 mb-2">
+            <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://github.com/namelesstherebel/stefandoughtyresume/blob/main/Stefan%20Doughty%20WebDev%20Resume%20APRIL2024.pdf" target=”_blank”>Resumè</a></li>
+            <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://codepen.io/namelesstherebel/pen/bGJjVpK" target=”_blank”>iOS Style Calculator *Javascript Practice*</a></li>
+            <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://codepen.io/namelesstherebel/pen/gOydqja" target=”_blank”>Wordle *FrontEndMastersCourse*</a></li>
+            <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://namelesstherebel.github.io/hw-lanscaping/index.html" target=”_blank”>Landscaping Site *Bootstrap 5*</a></li>
+            <li class="list-group-item bg-transparent border-0"><a href="https://codepen.io/namelesstherebel/pen/jORpeox" target=”_blank”>CrossColorTextReveal *js Scroll* </a></li>
+          </ul>
+
+        </div>
 
 
-        </section>
+      </section>
 
-        <h2 class="like-heading">Things I Enjoy</h2>
-        <section class="things-i-like">
-          <div class="wrapper">
-            <i class="fa-solid fa-angle-left"></i>
-            <ul class="carousel">
-              <li class="card">
-                <div class="card-img"><img src="/img/codiing.jpg" alt="coding" draggable="false"></div>
-                <h3 class="card-title">Coding</h3>
-                <span class="card-text">Newest addiction. It's fun to practice and improve on a skill.</span>
-              </li>
-              <li class="card">
-                <div class="card-img"><img src="/img/native-intsruments-s4.jpg" alt="dj gear" draggable="false"></div>
-                <h3 class="card-title">DJ Gear</h3>
-                <span class="card-text">NI. Pioneer. Denon. Mixing tunes is a lifestyle.</span>
-              </li>
-              <li class="card">
-                <div class="card-img"><img src="/img/abletonlive12.jpg" alt="ableton live 12" draggable="false"></div>
-                <h3 class="card-title">Music Production</h3>
-                <span class="card-text">This is when I'm the most at home. Hobbies keep you young.</span>
-              </li>
-              <li class="card">
-                <div class="card-img"><img src="/img/anime.jpg" alt="anime" draggable="false"></div>
-                <h3 class="card-title">Animation</h3>
-                <span class="card-text">I missed my calling to create and write animated stories.</span>
-              </li>
-              <li class="card">
-                <div class="card-img"><img src="/img/cinema.jpg" alt="cinema" draggable="false"></div>
-                <h3 class="card-title">Cinema</h3>
-                <span class="card-text">Nothing beats sitting in a theater and escaping with a good movie!</span>
-              </li>
-              <li class="card">
-                <div class="card-img"><img src="/img/sneakercollection.jpg" alt="sneakers" draggable="false"></div>
-                <h3 class="card-title">Sneakers</h3>
-                <span class="card-text">Where form and function truly align!</span>
-              </li>
-            </ul>
-            <i class="fa-solid fa-angle-right"></i>
-          </div>
-        </section>
 
-        <section class="video-section">
-          <div class="video-container">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/C3nDUq206Ys?si=HIQgqu_qI9ZssUqJ&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-          </div>
-        </section>
+      <h2 class="like-heading">Things I Enjoy</h2>
+      <section class="things-i-like mb-4">
+        <div class="wrapper container-fluid m-0">
+          <i class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card h-100">
+              <div class="card-img"><img src="/img/codiing.jpg" alt="coding" draggable="false"></div>
+              <h3 class="card-title">Coding</h3>
+              <span class="card-text">Newest addiction. It's fun to practice and improve on a skill.</span>
+            </li>
+            <li class="card h-100">
+              <div class="card-img"><img src="/img/native-intsruments-s4.jpg" alt="dj gear" draggable="false"></div>
+              <h3 class="card-title">DJ Gear</h3>
+              <span class="card-text">NI. Pioneer. Denon. Mixing tunes is a lifestyle.</span>
+            </li>
+            <li class="card h-100">
+              <div class="card-img"><img src="/img/abletonlive12.jpg" alt="ableton live 12" draggable="false"></div>
+              <h3 class="card-title">Music Production</h3>
+              <span class="card-text">This is when I'm the most at home. Hobbies keep you young.</span>
+            </li>
+            <li class="card h-100">
+              <div class="card-img"><img src="/img/anime.jpg" alt="anime" draggable="false"></div>
+              <h3 class="card-title">Animation</h3>
+              <span class="card-text">I missed my calling to create and write animated stories.</span>
+            </li>
+            <li class="card h-100">
+              <div class="card-img"><img src="/img/cinema.jpg" alt="cinema" draggable="false"></div>
+              <h3 class="card-title">Cinema</h3>
+              <span class="card-text">Nothing beats sitting in a theater and escaping with a good movie!</span>
+            </li>
+            <li class="card h-100">
+              <div class="card-img"><img src="/img/sneakercollection.jpg" alt="sneakers" draggable="false"></div>
+              <h3 class="card-title">Sneakers</h3>
+              <span class="card-text">Where form and function truly align!</span>
+            </li>
+          </ul>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <div class="video-container mb-4">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/C3nDUq206Ys?si=HIQgqu_qI9ZssUqJ&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+      </section>
       </div>
     </main>
 
