@@ -384,20 +384,21 @@ h2 {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 10px);
   }
+  .wrapper i {
+    margin-right 15px;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
-}
-
-
-@media screen and (max-width: 360px) {
-  .wrapper .carousel {
-    grid-auto-columns: 200%;
+  .wrapper i {
+    margin-right: 8px;
   }
 }
+
+
 
 /* video section */
 
