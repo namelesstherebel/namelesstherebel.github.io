@@ -314,7 +314,7 @@ h2.glow-text {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 15px);
-  gap: 10vw;
+  gap: 15vw;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -351,9 +351,9 @@ h2.glow-text {
 
 .carousel .card {
   scroll-snap-align: start;
-  height: 90vh;
-  width: 40vw;
-  min-width: ;
+  height: 180px;
+  width: 30vw;
+  min-width: 40px;
   list-style: none;
   background: white;
   display: flex;
@@ -380,6 +380,11 @@ h2.glow-text {
 @media screen and (max-width: 1000px) {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 10px);
+
+  }
+
+  .carousel .card {
+    width: 35vw;
   }
 
   .wrapper i {
@@ -390,6 +395,10 @@ h2.glow-text {
 @media screen and (max-width: 700px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
+  }
+
+  .carousel .card {
+    width: 45vw;
   }
 
   .wrapper i {
