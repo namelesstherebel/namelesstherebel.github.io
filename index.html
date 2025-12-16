@@ -11,21 +11,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <script src="script.js" defer></script>
   </head>
 
-  <body class="d-flex flex-column min-vh-100 m-0">
+  <body>
 
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html"><img src="/img/blazeluminatiwhite.png" alt="My Logo" class="my-logo img-fluid"></a>
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/img/blazeluminatiwhite.png" alt="My Logo" class="my-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item px-3">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#enjoy">Interests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#video">Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#footer">Social</a>
             </li>
           </ul>
@@ -33,30 +48,27 @@
       </div>
     </nav>
 
-
-    <div class="container-fluid">
-      <section class="special-header m-0">
-        <h1>
-          <span>Stefan Doughty's</span>
-          <span>
-    &nbsp;portfolio
-    <span class="pops">
-      <span class="pop"></span>
-          <span class="pop"></span>
-          <span class="pop"></span>
-          <span class="pop"></span>
-          <span class="pop"></span>
+    <!-- Hero Section -->
+    <section class="special-header">
+      <h1>
+        <span>Stefan Doughty's</span>
+        <span>
+          &nbsp;portfolio
+          <span class="pops">
+            <span class="pop"></span>
+            <span class="pop"></span>
+            <span class="pop"></span>
+            <span class="pop"></span>
+            <span class="pop"></span>
           </span>
-          </span>
-          <span>™</span>
-        </h1>
-      </section>
-    </div>
-
-
+        </span>
+        <span>™</span>
+      </h1>
+    </section>
 
     <main>
 
+      <!-- Hello World Hero -->
       <div class="text-white p-5 mb-4 d-flex hero">
         <div class="container-fluid">
           <h2 class="glow-text col-12">
@@ -65,152 +77,228 @@
         </div>
       </div>
 
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio">
+        <h2 class="section-heading">Portfolio</h2>
+        <p class="section-subheading">Check out some of my work and projects</p>
 
+        <div class="portfolio-grid">
+          <a href="https://github.com/namelesstherebel/stefandoughtyresume/blob/main/Stefan%20Doughty%20WebDev%20Resume%20APRIL2024.pdf" target="_blank" class="portfolio-card">
+            <div class="portfolio-card-icon">
+              <i class="bi bi-file-earmark-person"></i>
+            </div>
+            <h3 class="portfolio-card-title">Resume</h3>
+            <p class="portfolio-card-description">My professional resume showcasing my skills, experience, and qualifications in web development.</p>
+            <span class="portfolio-card-link">View Project <i class="bi bi-arrow-right"></i></span>
+          </a>
 
-      <section class="portfolio my-5 m-0">
-        <div class="container-fluid">
-          <h2 class="justify-content-center text-white my-5 pt-5">Portfolio</h2>
+          <a href="https://codepen.io/namelesstherebel/pen/bGJjVpK" target="_blank" class="portfolio-card">
+            <div class="portfolio-card-icon">
+              <i class="bi bi-calculator"></i>
+            </div>
+            <h3 class="portfolio-card-title">iOS Style Calculator</h3>
+            <p class="portfolio-card-description">A JavaScript practice project recreating the sleek iOS calculator interface and functionality.</p>
+            <span class="portfolio-card-link">View Project <i class="bi bi-arrow-right"></i></span>
+          </a>
+
+          <a href="https://codepen.io/namelesstherebel/pen/gOydqja" target="_blank" class="portfolio-card">
+            <div class="portfolio-card-icon">
+              <i class="bi bi-grid-3x3"></i>
+            </div>
+            <h3 class="portfolio-card-title">Wordle Clone</h3>
+            <p class="portfolio-card-description">A recreation of the popular word game built as part of the Frontend Masters course curriculum.</p>
+            <span class="portfolio-card-link">View Project <i class="bi bi-arrow-right"></i></span>
+          </a>
+
+          <a href="https://namelesstherebel.github.io/hw-lanscaping/index.html" target="_blank" class="portfolio-card">
+            <div class="portfolio-card-icon">
+              <i class="bi bi-tree"></i>
+            </div>
+            <h3 class="portfolio-card-title">Landscaping Site</h3>
+            <p class="portfolio-card-description">A responsive landscaping business website built with Bootstrap 5 framework.</p>
+            <span class="portfolio-card-link">View Project <i class="bi bi-arrow-right"></i></span>
+          </a>
+
+          <a href="https://codepen.io/namelesstherebel/pen/jORpeox" target="_blank" class="portfolio-card">
+            <div class="portfolio-card-icon">
+              <i class="bi bi-palette"></i>
+            </div>
+            <h3 class="portfolio-card-title">Cross Color Text Reveal</h3>
+            <p class="portfolio-card-description">A creative JavaScript scroll animation that reveals colorful text as users scroll through the page.</p>
+            <span class="portfolio-card-link">View Project <i class="bi bi-arrow-right"></i></span>
+          </a>
         </div>
-
-        <div class="d-flex justify-content-center list-group m-0">
-          <ul class="left-list text-decoration-none list-unstyled p-3 mb-2">
-            <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://github.com/namelesstherebel/stefandoughtyresume/blob/main/Stefan%20Doughty%20WebDev%20Resume%20APRIL2024.pdf" target=”_blank”>Resumè</a></li>
-            <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://codepen.io/namelesstherebel/pen/bGJjVpK" target=”_blank”>iOS Style Calculator *Javascript Practice*</a></li>
-            <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://codepen.io/namelesstherebel/pen/gOydqja" target=”_blank”>Wordle *FrontEndMastersCourse*</a></li>
-            <li class="list-group-item bg-transparent border-0 mb-3"><a href="https://namelesstherebel.github.io/hw-lanscaping/index.html" target=”_blank”>Landscaping Site *Bootstrap 5*</a></li>
-            <li class="list-group-item bg-transparent border-0"><a href="https://codepen.io/namelesstherebel/pen/jORpeox" target=”_blank”>CrossColorTextReveal *js Scroll* </a></li>
-          </ul>
-
-        </div>
-
-
       </section>
 
-      <div class="container-fluid my-5">
-        <h2 class="like-heading my-5">Things I Enjoy</h2>
-      </div>
-      <section class="things-i-like my-4 pt-5">
-        <div class="wrapper container-fluid m-0">
+      <!-- Things I Enjoy Section -->
+      <section id="enjoy" class="things-i-like">
+        <h2 class="section-heading">Things I Enjoy</h2>
+        <p class="section-subheading">A glimpse into my passions and interests</p>
+
+        <div class="wrapper">
           <i class="fa-solid fa-angle-left"></i>
           <ul class="carousel">
-            <li class="card h-100">
-              <div class="card-img card-img-top"><img src="/img/codiing.jpg" alt="coding" draggable="false"></div>
-              <h3 class="card-title">Coding</h3>
-              <span class="card-text">Newest addiction. It's fun to practice and improve on a skill.</span>
+            <li class="card">
+              <div class="card-img-wrapper">
+                <img src="/img/codiing.jpg" alt="coding" draggable="false">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Coding</h3>
+                <p class="card-text">Newest addiction. It's fun to practice and improve on a skill.</p>
+              </div>
             </li>
-            <li class="card h-100">
-              <div class="card-img card-img-top"><img src="/img/native-intsruments-s4.jpg" alt="dj gear" draggable="false"></div>
-              <h3 class="card-title">DJ Gear</h3>
-              <span class="card-text">NI. Pioneer. Denon. Mixing tunes is a lifestyle.</span>
+            <li class="card">
+              <div class="card-img-wrapper">
+                <img src="/img/native-intsruments-s4.jpg" alt="dj gear" draggable="false">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">DJ Gear</h3>
+                <p class="card-text">NI. Pioneer. Denon. Mixing tunes is a lifestyle.</p>
+              </div>
             </li>
-            <li class="card h-100">
-              <div class="card-img card-img-top"><img src="/img/abletonlive12.jpg" alt="ableton live 12" draggable="false"></div>
-              <h3 class="card-title">Music Production</h3>
-              <span class="card-text">This is when I'm the most at home. Hobbies keep you young.</span>
+            <li class="card">
+              <div class="card-img-wrapper">
+                <img src="/img/abletonlive12.jpg" alt="ableton live 12" draggable="false">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Music Production</h3>
+                <p class="card-text">This is when I'm the most at home. Hobbies keep you young.</p>
+              </div>
             </li>
-            <li class="card h-100">
-              <div class="card-img card-img-top"><img src="/img/anime.jpg" alt="anime" draggable="false"></div>
-              <h3 class="card-title">Animation</h3>
-              <span class="card-text">I missed my calling to create and write animated stories.</span>
+            <li class="card">
+              <div class="card-img-wrapper">
+                <img src="/img/anime.jpg" alt="anime" draggable="false">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Animation</h3>
+                <p class="card-text">I missed my calling to create and write animated stories.</p>
+              </div>
             </li>
-            <li class="card h-100">
-              <div class="card-img card-img-top"><img src="/img/cinema.jpg" alt="cinema" draggable="false"></div>
-              <h3 class="card-title">Cinema</h3>
-              <span class="card-text">Nothing beats sitting in a theater and escaping with a good movie!</span>
+            <li class="card">
+              <div class="card-img-wrapper">
+                <img src="/img/cinema.jpg" alt="cinema" draggable="false">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Cinema</h3>
+                <p class="card-text">Nothing beats sitting in a theater and escaping with a good movie!</p>
+              </div>
             </li>
-            <li class="card h-100">
-              <div class="card-img card-img-top"><img src="/img/sneakercollection.jpg" alt="sneakers" draggable="false"></div>
-              <h3 class="card-title">Sneakers</h3>
-              <span class="card-text">Where form and function truly align!</span>
+            <li class="card">
+              <div class="card-img-wrapper">
+                <img src="/img/sneakercollection.jpg" alt="sneakers" draggable="false">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Sneakers</h3>
+                <p class="card-text">Where form and function truly align!</p>
+              </div>
             </li>
           </ul>
           <i class="fa-solid fa-angle-right"></i>
         </div>
       </section>
 
-      <section class="video-section my-5">
-        <div class="video-container pt-5">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/C3nDUq206Ys?si=HIQgqu_qI9ZssUqJ&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      <!-- Video Section -->
+      <section id="video" class="video-section">
+        <h2 class="section-heading">A Banger</h2>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/C3nDUq206Ys?si=HIQgqu_qI9ZssUqJ&autoplay=1&mute=1"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
           </iframe>
         </div>
       </section>
 
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2 class="section-heading">Get In Touch</h2>
+        <p class="section-subheading">Have a question or want to work together?</p>
 
-
-      <section class="form-section my-4 d-flex pt-5">
-
-        <div class="col-6 d-flex justify-content-center align-items-center text-white">
-          <div class="container-fluid reach-out">
-            <div class="mb-5">
-              <h2>Reach out!</h2>
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="contact-card-content">
+                <h3>Email</h3>
+                <p>Drop me a message anytime</p>
+              </div>
             </div>
-            <div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="contact-card-content">
+                <h3>Location</h3>
+                <p>Available for remote work</p>
+              </div>
             </div>
 
-            <p>
-              Not functioning yet! Will update when it does!
-            </p>
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <div class="contact-card-content">
+                <h3>Response Time</h3>
+                <p>Usually within 24 hours</p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <!-- Wrapper container -->
-        <div class="col-6 container-fluid py-4 mx-4">
-          <div class="d-flex justify-content-center">
-            <!-- Bootstrap 5 starter form -->
-            <form id="contactForm" class="bg-dark justify-content-center w-75">
-
-              <!-- Name input -->
-              <div class="mb-3">
-                <label class="form-label" for="name">Name</label>
-                <input class="form-control w-100" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
               </div>
 
-              <!-- Email address input -->
-              <div class="mb-3">
-                <label class="form-label" for="emailAddress">Email Address</label>
-                <input class="form-control w-100" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
               </div>
 
-              <!-- Message input -->
-              <div class="mb-3">
-                <label class="form-label" for="message">Message</label>
-                <textarea class="form-control w-100" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message..." required></textarea>
               </div>
 
-              <!-- Form submit button -->
-              <div class="d-grid">
-                <button class="btn btn-primary btn-lg w-100" type="submit">Submit</button>
-              </div>
-
+              <button type="submit" class="submit-btn">
+                Send Message <i class="bi bi-send"></i>
+              </button>
             </form>
           </div>
-
-
-
         </div>
       </section>
+
     </main>
 
-    <a id="footer">
-      <footer class="end-page">
-        <a href="https://discord.gg/DdrhEFma" target=”_blank”>
-          <div class="blazeluminati-logo">
-            <img class="my-logo" src="/img/blazeluminatiwhite.png" alt="blazeluminati logo white">
-          </div>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="social-links">
+        <a href="https://www.facebook.com/blazeluminati/" target="_blank" class="social-link" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
         </a>
-        <div class="icons-container">
-          <div class="icons">
-            <div class="icon">
-              <a href="https://www.facebook.com/blazeluminati/" target=”_blank”><i class="bi bi-facebook fs-3"></i></a>
-              <a href="https://www.instagram.com/blazeluminati/" target=”_blank”><i class="bi bi-instagram fs-3"></i></a>
-              <a href="https://www.linkedin.com/in/stefan-doughty-9651b767/" target=”_blank”><i class="bi bi-linkedin fs-3"></i></a>
-              <a href="https://open.spotify.com/artist/0SToIp2BuqO2rplhHjc6qY?si=CyPuEZeHQ4yMrS_cXFHykA" target=”_blank”><i class="bi bi-spotify fs-3"></i></a>
-              <a href="https://github.com/namelesstherebel" target=”_blank”><i class="bi bi-github fs-3"></i></a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </a>
-    </div>
+        <a href="https://www.instagram.com/blazeluminati/" target="_blank" class="social-link" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/stefan-doughty-9651b767/" target="_blank" class="social-link" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://open.spotify.com/artist/0SToIp2BuqO2rplhHjc6qY?si=CyPuEZeHQ4yMrS_cXFHykA" target="_blank" class="social-link" aria-label="Spotify">
+          <i class="bi bi-spotify"></i>
+        </a>
+        <a href="https://github.com/namelesstherebel" target="_blank" class="social-link" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <p class="copyright">&copy; 2024 Stefan Doughty. All rights reserved.</p>
+    </footer>
+
   </body>
 </html>
