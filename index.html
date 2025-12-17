@@ -3,14 +3,19 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Stefan Doughty - Web Developer Portfolio. Check out my projects, skills, and interests.">
 		<title>Stefan Doughty Portfolio</title>
+
+		<!-- Preconnect to external resources for faster loading -->
+		<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://www.youtube.com" crossorigin>
 
 		<!-- Bootstrap CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Bootstrap Icons -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="style.css">
 	</head>
@@ -20,8 +25,8 @@
 			<!-- Navigation -->
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="index.html">
-						<img src="img/blazeluminatiwhite.png" alt="Stefan Doughty Logo" class="nav-logo">
+					<a class="navbar-brand" href="index.html" aria-label="Home">
+						<img src="img/blazeluminatiwhite.png" alt="Stefan Doughty Logo" class="nav-logo" width="40" height="40">
 					</a>
 
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -134,11 +139,11 @@
 				</div>
 				<div class="things-i-like">
 					<div class="wrapper container-fluid m-0">
-						<i class="fa-solid fa-angle-left" id="left"></i>
+						<i class="bi bi-chevron-left" id="left"></i>
 						<ul class="carousel">
 							<li class="card">
 								<div class="card-img-wrapper">
-									<img src="img/codiing.jpg" alt="coding" draggable="false">
+									<img src="img/codiing.jpg" alt="coding workspace with computer and code" draggable="false" loading="lazy">
 								</div>
 								<div class="card-body">
 									<h3 class="card-title">Coding</h3>
@@ -147,7 +152,7 @@
 							</li>
 							<li class="card">
 								<div class="card-img-wrapper">
-									<img src="img/native-intsruments-s4.jpg" alt="dj gear" draggable="false">
+									<img src="img/native-intsruments-s4.jpg" alt="Native Instruments S4 DJ controller" draggable="false" loading="lazy">
 								</div>
 								<div class="card-body">
 									<h3 class="card-title">DJ Gear</h3>
@@ -156,7 +161,7 @@
 							</li>
 							<li class="card">
 								<div class="card-img-wrapper">
-									<img src="img/abletonlive12.jpg" alt="ableton live 12" draggable="false">
+									<img src="img/abletonlive12.jpg" alt="Ableton Live 12 music production software" draggable="false" loading="lazy">
 								</div>
 								<div class="card-body">
 									<h3 class="card-title">Music Production</h3>
@@ -165,7 +170,7 @@
 							</li>
 							<li class="card">
 								<div class="card-img-wrapper">
-									<img src="img/anime.jpg" alt="anime" draggable="false">
+									<img src="img/anime.jpg" alt="anime characters and artwork" draggable="false" loading="lazy">
 								</div>
 								<div class="card-body">
 									<h3 class="card-title">Animation</h3>
@@ -174,7 +179,7 @@
 							</li>
 							<li class="card">
 								<div class="card-img-wrapper">
-									<img src="img/cinema.jpg" alt="cinema" draggable="false">
+									<img src="img/cinema.jpg" alt="movie theater with red seats" draggable="false" loading="lazy">
 								</div>
 								<div class="card-body">
 									<h3 class="card-title">Cinema</h3>
@@ -183,7 +188,7 @@
 							</li>
 							<li class="card">
 								<div class="card-img-wrapper">
-									<img src="img/sneakercollection.jpg" alt="sneakers" draggable="false">
+									<img src="img/sneakercollection.jpg" alt="colorful sneaker collection" draggable="false" loading="lazy">
 								</div>
 								<div class="card-body">
 									<h3 class="card-title">Sneakers</h3>
@@ -191,7 +196,7 @@
 								</div>
 							</li>
 						</ul>
-						<i class="fa-solid fa-angle-right" id="right"></i>
+						<i class="bi bi-chevron-right" id="right"></i>
 					</div>
 				</div>
 			</section>
@@ -288,8 +293,8 @@
 		</footer>
 
 		<!-- Bootstrap JS -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 		<!-- Custom JS -->
-		<script src="script.js"></script>
+		<script src="script.js" defer></script>
 	</body>
 </html>
