@@ -338,7 +338,7 @@ h1 > span:nth-of-type(2) {
 
 /* Hero Banner Section */
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('LookingawayBW.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/LookingawayBW.jpg');
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
