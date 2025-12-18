@@ -338,50 +338,64 @@ h1 > span:nth-of-type(2) {
 
 /* Hero Banner Section */
 .hero {
-  background-image: url(LookingawayBW.jpg);
-  background-position: top center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('LookingawayBW.jpg');
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 80vh;
-  max-height: 400px;
+  min-height: 400px;
+  height: 50vh;
+  max-height: 500px;
   width: 100%;
   position: relative;
   overflow: hidden;
-}
-
-/* Add overlay for better text readability */
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
-.hero h2 {
-  position: relative;
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .glow-text {
   font-family: "Teko", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(3rem, 11vw, 8rem);
+  font-size: clamp(3.5rem, 12vw, 9rem);
   text-transform: uppercase;
-  animation: glow 1s ease-in-out infinite alternate;
-  color: var(--color-primary);
+  animation: glow 2s ease-in-out infinite alternate;
+  color: var(--color-primary-light);
   margin: 0;
-  text-shadow: 0 0 20px rgba(45, 157, 169, 0.5);
+  padding: 0;
+  text-shadow:
+    0 0 10px rgba(45, 157, 169, 0.8),
+    0 0 20px rgba(45, 157, 169, 0.6),
+    0 0 30px rgba(45, 157, 169, 0.4),
+    0 0 40px rgba(45, 157, 169, 0.2);
+  letter-spacing: 0.05em;
+  position: relative;
+  z-index: 2;
 }
 
 @keyframes glow {
-  from {
-    text-shadow: 0 0 30px var(--color-primary-light);
+  0% {
+    text-shadow:
+      0 0 10px rgba(133, 240, 252, 0.8),
+      0 0 20px rgba(133, 240, 252, 0.6),
+      0 0 30px rgba(45, 157, 169, 0.4),
+      0 0 40px rgba(45, 157, 169, 0.2);
   }
-  to {
-    text-shadow: 0 0 40px #6bfffd, 0 0 10px var(--color-white);
+  50% {
+    text-shadow:
+      0 0 20px rgba(133, 240, 252, 1),
+      0 0 30px rgba(107, 255, 253, 0.8),
+      0 0 40px rgba(45, 157, 169, 0.6),
+      0 0 50px rgba(45, 157, 169, 0.4),
+      0 0 60px rgba(45, 157, 169, 0.2);
+  }
+  100% {
+    text-shadow:
+      0 0 10px rgba(133, 240, 252, 0.8),
+      0 0 20px rgba(133, 240, 252, 0.6),
+      0 0 30px rgba(45, 157, 169, 0.4),
+      0 0 40px rgba(45, 157, 169, 0.2);
   }
 }
 
@@ -389,12 +403,25 @@ h1 > span:nth-of-type(2) {
 @media (max-width: 768px) {
   .hero {
     background-attachment: scroll;
-    height: 60vh;
-    max-height: 300px;
+    background-position: center center;
+    min-height: 300px;
+    height: 40vh;
+    max-height: 350px;
   }
 
   .glow-text {
-    font-size: clamp(2rem, 10vw, 4rem);
+    font-size: clamp(2.5rem, 12vw, 5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 250px;
+    height: 35vh;
+  }
+
+  .glow-text {
+    font-size: clamp(2rem, 10vw, 3.5rem);
   }
 }
 
