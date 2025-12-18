@@ -336,7 +336,7 @@ h1 > span:nth-of-type(2) {
 
 /* end pop header */
 
-/* Hero Banner Section */
+/* Hero Banner Section - No Parallax */
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/LookingawayBW.jpg');
   background-position: center top;
