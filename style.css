@@ -590,20 +590,22 @@ h1 > span:nth-of-type(2) {
 .carousel .card {
   scroll-snap-align: start;
   list-style: none;
-  background: var(--color-white);
+  background: linear-gradient(145deg, rgba(45, 157, 169, 0.1), rgba(45, 157, 169, 0.05));
+  border: 1px solid rgba(45, 157, 169, 0.2);
   display: flex;
   flex-direction: column;
-  border-radius: 12px;
+  border-radius: var(--border-radius-card);
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: var(--transition-standard);
   height: 100%;
   min-height: 380px;
 }
 
 .carousel .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+  background: linear-gradient(145deg, rgba(45, 157, 169, 0.2), rgba(45, 157, 169, 0.1));
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 30px rgba(45, 157, 169, 0.2);
 }
 
 .carousel .card .card-img-wrapper {
@@ -636,13 +638,13 @@ h1 > span:nth-of-type(2) {
   font-weight: 600;
   margin: 0 0 0.75rem 0;
   padding: 0;
-  color: #1a1a1a;
+  color: var(--color-white);
 }
 
 .carousel .card .card-text {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.5;
-  color: #555;
+  color: var(--color-text-muted);
   margin: 0;
   padding: 0;
 }
