@@ -336,6 +336,68 @@ h1 > span:nth-of-type(2) {
 
 /* end pop header */
 
+/* Hero Banner Section */
+.hero {
+  background-image: url(LookingawayBW.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 80vh;
+  max-height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add overlay for better text readability */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero h2 {
+  position: relative;
+  z-index: 2;
+}
+
+.glow-text {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(3rem, 11vw, 8rem);
+  text-transform: uppercase;
+  animation: glow 1s ease-in-out infinite alternate;
+  color: var(--color-primary);
+  margin: 0;
+  text-shadow: 0 0 20px rgba(45, 157, 169, 0.5);
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 30px var(--color-primary-light);
+  }
+  to {
+    text-shadow: 0 0 40px #6bfffd, 0 0 10px var(--color-white);
+  }
+}
+
+/* Mobile optimization for hero */
+@media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+    height: 60vh;
+    max-height: 300px;
+  }
+
+  .glow-text {
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+}
+
 /* Portfolio Section */
 .portfolio-section {
   padding: var(--spacing-section) 0;
