@@ -54,6 +54,8 @@ Labels (apply those whose criteria match):
 - `no-tests`: core change or applicable test gap with no test change.
 
 
+## Review and merge
+
 Preserve all other applicable checks and safety, visual, release and owner-acceptance gates. Do not bypass protections or change settings under these instructions.
 
 The current branch writer handles material findings, inspects corrections, verifies applicable source/secret checks and actual resulting-head CI, then performs a normal merge pinned to the reviewed head. Report missing, skipped, errored and non-applicable checks accurately. Source scanning is not dependency-advisory coverage; saved configuration is not proof of live review or successful provider operation.
@@ -63,4 +65,4 @@ Preserve Cubic integration, reviews and checks entirely. Retain independent Code
 
 ### Deployment boundary
 
-GitHub Pages currently publishes the main branch. This review-policy migration does not authorize deployment. Keep the migration PR unmerged until the owner resolves the deployment impact and any reserved deployment approval; do not change Pages settings or publishing behavior.
+GitHub Pages currently publishes the main branch. This review-policy migration does not authorize deployment. Keep a PR unmerged until the owner resolves the deployment impact and any reserved deployment approval; do not change Pages settings or publishing behavior.
